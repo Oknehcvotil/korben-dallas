@@ -3,12 +3,20 @@ import styled from '@emotion/styled';
 export const HeroSection = styled.section`
   padding-top: 33px;
   padding-bottom: 35px;
+
+  @media (min-width: 1440px) {
+    padding: 28px 0 51px;
+  }
 `;
 
 export const HeroTitleCont = styled.div`
   position: relative;
   min-height: 256px;
-  margin-bottom: 13px;
+  margin-bottom: 6px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const DesignRectangle = styled.div`
@@ -19,6 +27,11 @@ export const DesignRectangle = styled.div`
   width: 92px;
   height: 32px;
   background: #d9d9d9;
+
+  @media (min-width: 1440px) {
+    top: -32px;
+    right: -60px;
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -26,6 +39,10 @@ export const HeroTitle = styled.h1`
   font-size: 32px;
   line-height: 110%;
   max-width: 286px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 53px;
+  }
 `;
 
 export const Logo = styled.a`
@@ -34,8 +51,7 @@ export const Logo = styled.a`
   color: #000;
   font-weight: 600;
   font-size: 64px;
-  max-width: 286px;
-  margin-bottom: 39px;
+  margin-bottom: 52px;
   position: relative;
 
   svg {
@@ -44,10 +60,17 @@ export const Logo = styled.a`
     right: -15px;
     bottom: 45px;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 83px;
+  }
 `;
 
 export const DigitalOpportunities = styled.p`
-  margin-bottom: 6px;
+  @media (min-width: 1440px) {
+    margin-bottom: 32px;
+    max-width: 469px;
+  }
 `;
 
 export const VideoCard = styled.div`
@@ -57,6 +80,15 @@ export const VideoCard = styled.div`
   background: #d3f500;
   margin-bottom: 5px;
   padding: 7px 10px;
+
+  @media (min-width: 1440px) {
+    border-radius: 30px;
+    width: 860px;
+    max-width: 100%;
+    height: 595px;
+    background: linear-gradient(180deg, #d3f500 0%, #fff 100%);
+    padding: 13px 13px 50px;
+  }
 `;
 
 export const VideoCont = styled.div`
@@ -64,6 +96,11 @@ export const VideoCont = styled.div`
   max-width: 323px;
   height: 522px;
   overflow: hidden;
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+    height: 100%;
+  }
 
   video {
     width: 100%;
@@ -87,4 +124,8 @@ export const ContactBtn = styled.a`
   padding: 16px 24px;
   background: linear-gradient(90deg, #faff00 35.84%, #9ae1c9 100%);
   cursor: pointer;
+
+  @media (min-width: 1440px) {
+    max-width: 222px;
+  }
 `;

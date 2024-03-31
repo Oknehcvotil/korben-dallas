@@ -6,13 +6,11 @@ import {
   FooterLogoLink,
   FooterText,
   FooterTitle,
-  TelegramCommunityBtn,
-  TelegramCommunityCont,
 } from './AppFooter.styled';
-import telegramImg from '../../assets/images/telegram_logo.png';
 import SubscribeForm from 'components/SubscribeForm/SubscribeForm';
 import SocialMediaCard from 'components/SocialMediaCard/SocialMediaCard';
 import AwardsSection from 'components/AwardsSection/AwardsSection';
+import TelegramCommunityBtn from 'components/TelegramCommunityBtn/TelegramCommunityBtn';
 
 const AppFooter = () => {
   return (
@@ -27,10 +25,7 @@ const AppFooter = () => {
             marketing campaign, or a cutting-edge digital solution, we're here
             to bring your ideas to life.
           </FooterText>
-          <TelegramCommunityCont>
-            <img src={telegramImg} alt="telegram" width="40" height="40" />
-            <TelegramCommunityBtn>Community</TelegramCommunityBtn>
-          </TelegramCommunityCont>
+          <TelegramCommunityBtn />
           <SubscribeForm />
           <SocialMediaCard />
           <FooterLogoLink>

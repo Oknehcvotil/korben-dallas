@@ -11,25 +11,48 @@ import {
   DigitalOpportunities,
   VideoCont,
 } from './Hero.styled';
-import heroVideo from '../../assets/video/hero_video.MP4';
+import useResize from 'hooks/useResize';
+import heroVideo from '../../assets/videos/hero_video.MP4';
 
 const Hero = () => {
+  const windowSize = useResize();
+  const isDesktop = windowSize.width >= 1440;
+
   return (
     <HeroSection>
-      <Wrapper>
+      <Wrapper
+        style={
+          isDesktop
+            ? {
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+              }
+            : undefined
+        }
+      >
         <HeroTitleCont>
           <DesignRectangle />
           <HeroTitle>
             Multi-service Digital <strong>Agency</strong>
           </HeroTitle>
           <Logo href="/">
-            Korben& Dallas{' '}
-            <Icon width="29.8" height="29.8" iconName="#icon-star" />
+            Korben&{!isDesktop && <br />}Dallas{' '}
+            {!isDesktop && (
+              <Icon width="29.8" height="29.8" iconName="#icon-star" />
+            )}
           </Logo>
+          <DigitalOpportunities>
+            Expand your opportunities in the digital space with professional
+            team
+          </DigitalOpportunities>
+          {isDesktop && (
+            <ContactBtn type="button">
+              Contact Us
+              <Icon width="20" height="16" iconName="#icon-arrow" />
+            </ContactBtn>
+          )}
         </HeroTitleCont>
-        <DigitalOpportunities>
-          Expand your opportunities in the digital space with professional team
-        </DigitalOpportunities>
         <div>
           <VideoCard>
             <VideoCont>
@@ -38,10 +61,12 @@ const Hero = () => {
               </video>
             </VideoCont>
           </VideoCard>
-          <ContactBtn type="button">
-            Contact Us
-            <Icon width="20" height="16" iconName="#icon-arrow" />
-          </ContactBtn>
+          {!isDesktop && (
+            <ContactBtn type="button">
+              Contact Us
+              <Icon width="20" height="16" iconName="#icon-arrow" />
+            </ContactBtn>
+          )}
         </div>
       </Wrapper>
     </HeroSection>

@@ -158,3 +158,18 @@ export const partnersCasinoData = [
   betSafeImg,
   myStakeImg,
 ];
+
+export const navData = [
+  {
+    name: 'Services',
+    hash: '#services',
+  },
+  {
+    name: 'Work',
+    hash: '#work',
+  },
+  {
+    name: 'Partners',
+    hash: '#partners',
+  },
+];

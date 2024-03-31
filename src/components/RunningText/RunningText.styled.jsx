@@ -13,6 +13,12 @@ export const RunningTextWrapper = styled.div`
   font-size: 20px;
   color: #fff;
   white-space: nowrap;
+
+  @media (min-width: 1440px) {
+    font-size: 25px;
+    max-width: 100%;
+    height: 31px;
+  }
 `;
 
 export const RunningTextCont = styled.div`
@@ -26,5 +32,11 @@ export const RunningTextCont = styled.div`
     white-space: nowrap;
     fill: #fff;
     margin-right: 24px;
+  }
+
+  @media (min-width: 1440px) {
+    svg {
+      fill: ${props => (props.fill ? props.fill : '#fff')};
+    }
   }
 `;
