@@ -4,12 +4,6 @@ export const ServSection = styled.section`
   padding-top: 21px;
 `;
 
-export const ServWrapper = styled.div`
-  max-width: 375px;
-  padding: 0 15px 0;
-  margin: 0 auto;
-`;
-
 export const ServCard = styled.div`
   border-radius: 24px;
   max-width: 345px;

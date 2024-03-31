@@ -1,8 +1,8 @@
 import { servicesListData } from 'data/data';
+import Wrapper from 'components/Wrapper/Wrapper';
 import {
   ServCard,
   ServSection,
-  ServWrapper,
   ServTitle,
   ServList,
 } from './ServicesSection.styled';
@@ -11,7 +11,7 @@ import ServicesListItem from 'components/ServicesListItem/ServicesListItem';
 const ServicesSection = () => {
   return (
     <ServSection>
-      <ServWrapper>
+      <Wrapper>
         <ServCard>
           <ServTitle>
             K&D <span>Services</span>
@@ -27,7 +27,7 @@ const ServicesSection = () => {
             ))}
           </ServList>
         </ServCard>
-      </ServWrapper>
+      </Wrapper>
     </ServSection>
   );
 };

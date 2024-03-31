@@ -5,13 +5,6 @@ export const HeroSection = styled.section`
   padding-bottom: 35px;
 `;
 
-export const HeroWrapper = styled.div`
-  max-width: 375px;
-  padding: 0 15px 0;
-  margin: 0 auto;
-  overflow: hidden;
-`;
-
 export const HeroTitleCont = styled.div`
   position: relative;
   min-height: 256px;

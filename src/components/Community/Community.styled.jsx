@@ -4,12 +4,6 @@ export const CommunitySection = styled.section`
   padding-top: 34px;
 `;
 
-export const CommunityWrapper = styled.div`
-  max-width: 375px;
-  padding: 0 15px 0;
-  margin: 0 auto;
-`;
-
 export const CommunityTitle = styled.h2`
   font-weight: 600;
   font-size: 46px;
@@ -34,7 +28,7 @@ export const CommunityText = styled.p`
 
 export const CommunityList = styled.ul`
   list-style: none;
-  margin: 0 auto;
+  padding: 0;
 
   &:not(:last-of-type) {
     margin-bottom: 15px;

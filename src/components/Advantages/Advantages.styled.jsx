@@ -4,12 +4,6 @@ export const AdvantagesSection = styled.section`
   padding-top: 26px;
 `;
 
-export const AdvantagesWrapper = styled.div`
-  max-width: 375px;
-  padding: 0 15px 0;
-  margin: 0 auto;
-`;
-
 export const AdvantagesCard = styled.div`
   border-radius: 24px;
   max-width: 345px;

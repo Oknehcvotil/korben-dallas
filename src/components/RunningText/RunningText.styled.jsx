@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Wrapper = styled.div`
+export const RunningTextWrapper = styled.div`
   max-width: 375px;
   margin: 0 auto;
   overflow: hidden;

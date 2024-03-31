@@ -1,8 +1,8 @@
 import { communityData } from 'data/data';
+import Wrapper from 'components/Wrapper/Wrapper';
 import {
   CommunitySection,
   CommunityTitle,
-  CommunityWrapper,
   CommunityText,
   CommunityList,
   TelegramCont,
@@ -14,7 +14,7 @@ import telegramImg from '../../assets/images/telegram_logo.png';
 const Community = () => {
   return (
     <CommunitySection>
-      <CommunityWrapper>
+      <Wrapper>
         <CommunityTitle>Explore Our Community</CommunityTitle>
         <CommunityText>
           At <strong>K&B</strong> we invite you to embark on a visual journey
@@ -35,7 +35,7 @@ const Community = () => {
               ))}
           </CommunityList>
           <TelegramCont>
-            <img src={telegramImg} alt="telegram" />
+            <img src={telegramImg} alt="telegram" width="66" height="66" />
             <JoinBtn>JOIN</JoinBtn>
           </TelegramCont>
           <CommunityList>
@@ -46,7 +46,7 @@ const Community = () => {
               ))}
           </CommunityList>
         </div>
-      </CommunityWrapper>
+      </Wrapper>
     </CommunitySection>
   );
 };

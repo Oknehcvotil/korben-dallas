@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 
 export const CommunityItem = styled.li`
+  margin: 0 auto;
   border-radius: 14px;
   padding: 9px 4px;
   max-width: 284px;

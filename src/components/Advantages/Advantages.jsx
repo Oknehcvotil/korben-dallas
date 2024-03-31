@@ -1,9 +1,9 @@
 import { projectsData, advantagesListData } from 'data/data';
+import Wrapper from 'components/Wrapper/Wrapper';
 import AdvantagesListItem from 'components/AdvantagesListItem/AdvantagesListItem';
 import {
   AdvantagesSection,
   AdvantagesTitle,
-  AdvantagesWrapper,
   ProjectsList,
   AdvantagesList,
   AdvantagesCard,
@@ -12,7 +12,7 @@ import {
 const Advantages = () => {
   return (
     <AdvantagesSection>
-      <AdvantagesWrapper>
+      <Wrapper>
         <AdvantagesCard>
           <AdvantagesTitle>Most powerful agency for </AdvantagesTitle>
           <ProjectsList>
@@ -31,7 +31,7 @@ const Advantages = () => {
             ))}
           </AdvantagesList>
         </AdvantagesCard>
-      </AdvantagesWrapper>
+      </Wrapper>
     </AdvantagesSection>
   );
 };

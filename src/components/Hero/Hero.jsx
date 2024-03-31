@@ -1,7 +1,7 @@
 import Icon from 'components/Icon/Icon';
+import Wrapper from 'components/Wrapper/Wrapper';
 import {
   HeroSection,
-  HeroWrapper,
   HeroTitle,
   Logo,
   HeroTitleCont,
@@ -16,7 +16,7 @@ import videoImg from '../../assets/images/video.png';
 const Hero = () => {
   return (
     <HeroSection>
-      <HeroWrapper>
+      <Wrapper>
         <HeroTitleCont>
           <DesignRectangle />
           <HeroTitle>
@@ -39,7 +39,7 @@ const Hero = () => {
             <Icon width="20" height="16" iconName="#icon-arrow" />
           </ContactBtn>
         </div>
-      </HeroWrapper>
+      </Wrapper>
     </HeroSection>
   );
 };
