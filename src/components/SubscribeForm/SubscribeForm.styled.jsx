@@ -33,4 +33,5 @@ export const SubscribeBtn = styled.button`
   align-items: center;
   justify-content: center;
   gap: 3px;
+  color: #000;
 `;
