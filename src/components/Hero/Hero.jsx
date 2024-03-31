@@ -33,7 +33,7 @@ const Hero = () => {
         <div>
           <VideoCard>
             <VideoCont>
-              <video id="videoPlayer" autoPlay muted loop>
+              <video id="videoPlayer" autoPlay muted loop playsinline>
                 <source src={heroVideo} type="video/mp4" />
               </video>
             </VideoCont>
