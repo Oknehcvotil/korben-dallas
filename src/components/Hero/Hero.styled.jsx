@@ -50,7 +50,7 @@ export const DigitalOpportunities = styled.p`
   margin-bottom: 6px;
 `;
 
-export const VideoCont = styled.div`
+export const VideoCard = styled.div`
   border-radius: 40px;
   max-width: 343px;
   height: 535px;
@@ -59,10 +59,17 @@ export const VideoCont = styled.div`
   padding: 7px 10px;
 `;
 
-export const Video = styled.img`
+export const VideoCont = styled.div`
   border-radius: 30px;
   max-width: 323px;
   height: 522px;
+  overflow: hidden;
+
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export const ContactBtn = styled.a`

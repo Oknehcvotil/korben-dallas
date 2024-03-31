@@ -6,12 +6,12 @@ import {
   Logo,
   HeroTitleCont,
   DesignRectangle,
-  VideoCont,
+  VideoCard,
   ContactBtn,
   DigitalOpportunities,
-  Video,
+  VideoCont,
 } from './Hero.styled';
-import videoImg from '../../assets/images/video.png';
+import heroVideo from '../../assets/video/hero_video.MP4';
 
 const Hero = () => {
   return (
@@ -31,9 +31,13 @@ const Hero = () => {
           Expand your opportunities in the digital space with professional team
         </DigitalOpportunities>
         <div>
-          <VideoCont>
-            <Video src={videoImg} alt="RA LOGISTICS" />
-          </VideoCont>
+          <VideoCard>
+            <VideoCont>
+              <video id="videoPlayer" autoPlay muted loop>
+                <source src={heroVideo} type="video/mp4" />
+              </video>
+            </VideoCont>
+          </VideoCard>
           <ContactBtn type="button">
             Contact Us
             <Icon width="20" height="16" iconName="#icon-arrow" />
