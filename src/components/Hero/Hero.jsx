@@ -11,7 +11,7 @@ import {
   DigitalOpportunities,
   VideoCont,
 } from './Hero.styled';
-// import heroVideo from '../../assets/video/hero_video.MP4';
+import heroVideo from '../../assets/video/hero_video.MP4';
 
 const Hero = () => {
   return (
@@ -33,17 +33,9 @@ const Hero = () => {
         <div>
           <VideoCard>
             <VideoCont>
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: `
-    <video class="video-js" playsinline autoplay loop muted>
-        <source src="../../assets/video/hero_video.MP4" type="video/mp4"/>
-    </video>`,
-                }}
-              />
-              {/* <video id="videoPlayer" autoPlay muted loop playsinline>
+              <video id="videoPlayer" autoPlay loop muted playsInline>
                 <source src={heroVideo} type="video/mp4" />
-              </video> */}
+              </video>
             </VideoCont>
           </VideoCard>
           <ContactBtn type="button">
