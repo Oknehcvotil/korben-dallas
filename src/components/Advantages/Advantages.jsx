@@ -9,11 +9,23 @@ import {
   AdvantagesCard,
   TitleCont,
 } from './Advantages.styled';
+import useResize from 'hooks/useResize';
 
 const Advantages = () => {
+  const windowSize = useResize();
+  const isDesktop = windowSize.width >= 1440;
+
   return (
     <AdvantagesSection>
-      <Wrapper>
+      <Wrapper
+        style={
+          isDesktop
+            ? {
+                overflow: 'visible',
+              }
+            : undefined
+        }
+      >
         <AdvantagesCard>
           <TitleCont>
             <AdvantagesTitle>Most powerful agency for </AdvantagesTitle>
