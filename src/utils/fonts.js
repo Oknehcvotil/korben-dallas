@@ -1,4 +1,5 @@
-import 'assets/fonts/Montserrat/Montserrat-ExtraLight.ttf'
+import 'assets/fonts/Montserrat/Montserrat-Thin.ttf';
+import 'assets/fonts/Montserrat/Montserrat-ExtraLight.ttf';
 import 'assets/fonts/Montserrat/Montserrat-Regular.ttf';
 import 'assets/fonts/Montserrat/Montserrat-Medium.ttf';
 import 'assets/fonts/Montserrat/Montserrat-SemiBold.ttf';

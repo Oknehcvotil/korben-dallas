@@ -9,6 +9,19 @@ export const AdvantageItem = styled.li`
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+
+  @media (min-width: 1440px) {
+    flex-basis: calc((100% - 39px) / 2);
+    text-align: left;
+
+    span {
+      color: #faff00;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const Amount = styled.p`

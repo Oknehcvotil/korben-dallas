@@ -7,6 +7,7 @@ import {
   ProjectsList,
   AdvantagesList,
   AdvantagesCard,
+  TitleCont,
 } from './Advantages.styled';
 
 const Advantages = () => {
@@ -14,12 +15,14 @@ const Advantages = () => {
     <AdvantagesSection>
       <Wrapper>
         <AdvantagesCard>
-          <AdvantagesTitle>Most powerful agency for </AdvantagesTitle>
-          <ProjectsList>
-            {projectsData.map((project, index) => (
-              <li key={index}>{project}</li>
-            ))}
-          </ProjectsList>
+          <TitleCont>
+            <AdvantagesTitle>Most powerful agency for </AdvantagesTitle>
+            <ProjectsList>
+              {projectsData.map((project, index) => (
+                <li key={index}>{project}</li>
+              ))}
+            </ProjectsList>
+          </TitleCont>
           <AdvantagesList>
             {advantagesListData.map((advantage, index) => (
               <AdvantagesListItem

@@ -1,3 +1,4 @@
+import React from 'react';
 import betImg from '../assets/images/partners/bet.png';
 import betSafeImg from '../assets/images/partners/betsafe.png';
 import myStakeImg from '../assets/images/partners/mystake.png';
@@ -66,7 +67,11 @@ export const projectsData = ['iGaming', 'Crypto', 'Investment', 'projects'];
 
 export const advantagesListData = [
   {
-    amount: '$812+',
+    amount: (
+      <>
+        <span>$8</span>12+
+      </>
+    ),
     title: 'Money Raised',
     description:
       'Total amount of money raised as a result of working with Walk Studio',
@@ -83,7 +88,11 @@ export const advantagesListData = [
       'Total of all clients around the world who have collaborated with us',
   },
   {
-    amount: '425+',
+    amount: (
+      <>
+        425<span>+</span>
+      </>
+    ),
     title: 'Project Complete',
     description:
       'Various kinds of big projects that you have completed on time',
@@ -105,6 +114,11 @@ export const servicesListData = [
     icon: '#icon-client',
     title: 'K&D',
     span: 'Media Buying',
+    text: 'Full service for teams and personal buyers',
+  },
+  {
+    icon: '#icon-client',
+    title: 'AGENCY AD ACCOUNTS',
   },
 ];
 
