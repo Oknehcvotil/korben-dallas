@@ -9,7 +9,7 @@ export const Form = styled.form`
 export const EmailInput = styled.input`
   border-radius: 48px;
   padding: 17px 32px;
-  width: 313px;
+  max-width: 313px;
   height: 54px;
   background-color: #fff;
   outline: none;
