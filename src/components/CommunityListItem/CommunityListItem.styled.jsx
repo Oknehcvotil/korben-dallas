@@ -14,6 +14,14 @@ export const CommunityItem = styled.li`
   &:not(:last-of-type) {
     margin-bottom: 15px;
   }
+
+  @media (min-width: 1440px) {
+    border-radius: 14px;
+    padding: 9px 4px;
+    max-width: 344px;
+    width: 344px;
+    height: 118px;
+  }
 `;
 
 export const CommunityItemLink = styled.a`

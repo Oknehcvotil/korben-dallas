@@ -2,14 +2,54 @@ import styled from '@emotion/styled';
 
 export const CommunitySection = styled.section`
   padding-top: 34px;
+
+  @media (min-width: 1440px) {
+    padding-top: 43px;
+  }
+`;
+
+export const CommunityCard = styled.div`
+  @media (min-width: 1440px) {
+    border-radius: 40px;
+    max-width: 1360px;
+    width: 100%;
+    min-height: 920px;
+    background: #f3f4f6;
+    padding: 56px 77px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const CommunityTitle = styled.h2`
+  font-family: var(--second-family);
   font-weight: 600;
   font-size: 46px;
   line-height: 110%;
   margin-bottom: 48px;
   text-align: center;
+
+  @media (min-width: 1440px) {
+    align-self: flex-start;
+    max-width: 425px;
+    font-size: 74px;
+    margin: 10px;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -943px;
+      border: 1px solid #000;
+      border-radius: 48px;
+      width: 136px;
+      height: 36px;
+    }
+  }
 `;
 
 export const CommunityText = styled.p`
@@ -24,6 +64,23 @@ export const CommunityText = styled.p`
   &:last-of-type {
     margin-bottom: 33px;
   }
+
+  @media (min-width: 1440px) {
+    font-size: 16px;
+    max-width: 100%;
+
+    &:last-of-type {
+      margin-bottom: 22px;
+    }
+  }
+`;
+
+export const CommunityLinksContainer = styled.div`
+  @media (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    gap: 120px;
+  }
 `;
 
 export const CommunityList = styled.ul`
@@ -33,6 +90,13 @@ export const CommunityList = styled.ul`
   &:not(:last-of-type) {
     margin-bottom: 15px;
   }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    &:not(:last-of-type) {
+      margin: 0;
+    }
+  }
 `;
 
 export const TelegramCont = styled.div`
@@ -41,8 +105,27 @@ export const TelegramCont = styled.div`
   align-items: center;
   justify-content: center;
   margin-bottom: 15px;
-
   gap: 15px;
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    gap: 54px;
+  }
+`;
+
+export const TelegramImgCont = styled.div`
+  @media (min-width: 1440px) {
+    border-radius: 100%;
+    padding: 9px;
+    width: 240px;
+    height: 240px;
+    backdrop-filter: blur(60.5837287902832px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 12.82px solid #d3f500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 export const JoinBtn = styled.a`
