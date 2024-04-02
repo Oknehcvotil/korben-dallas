@@ -4,6 +4,7 @@ import {
   Amount,
   Description,
 } from './AdvantagesListItem.styled';
+import PropTypes from 'prop-types';
 
 const AdvantagesListItem = ({ amount, title, description }) => (
   <AdvantageItem>
@@ -12,5 +13,11 @@ const AdvantagesListItem = ({ amount, title, description }) => (
     <Description>{description}</Description>
   </AdvantageItem>
 );
+
+AdvantagesListItem.propTypes = {
+  amount: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default AdvantagesListItem;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, NavList, HeaderLogo, HeaderCont } from './AppBar.styled';
+import { Header, NavList, HeaderLogo} from './AppBar.styled';
 import Wrapper from 'components/Wrapper/Wrapper';
 import { navData } from 'data/data';
 import NavListItem from 'components/NavListItem/NavListItem';

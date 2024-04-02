@@ -5,6 +5,7 @@ import {
   ServItemTitle,
 } from './ServicesListItem.styled';
 import useResize from 'hooks/useResize';
+import PropTypes from 'prop-types';
 
 const ServicesListItem = ({ img, title, span, text }) => {
   const windowSize = useResize();
@@ -21,6 +22,13 @@ const ServicesListItem = ({ img, title, span, text }) => {
       {isDesktop && text && <p>{text}</p>}
     </ServItem>
   );
+};
+
+ServicesListItem.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  span: PropTypes.string,
+  text: PropTypes.string,
 };
 
 export default ServicesListItem;

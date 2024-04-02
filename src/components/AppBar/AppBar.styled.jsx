@@ -4,12 +4,6 @@ export const Header = styled.header`
   padding-top: 30px;
 `;
 
-export const HeaderCont = styled.div`
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-`;
-
 export const NavList = styled.ul`
   list-style: none;
   padding: 0;

@@ -12,7 +12,7 @@ import {
   VideoCont,
 } from './Hero.styled';
 import useResize from 'hooks/useResize';
-import heroVideo from '../../assets/videos/hero_video.MP4';
+// import heroVideo from '../../assets/videos/hero_video.MP4';
 
 const Hero = () => {
   const windowSize = useResize();
@@ -57,7 +57,7 @@ const Hero = () => {
           <VideoCard>
             <VideoCont>
               <video id="videoPlayer" autoPlay loop muted playsInline>
-                <source src={heroVideo} type="video/mp4" />
+                {/* <source src={heroVideo} type="video/mp4" /> */}
               </video>
             </VideoCont>
           </VideoCard>
