@@ -21,6 +21,10 @@ export const CommunityItem = styled.li`
     max-width: 344px;
     width: 344px;
     height: 118px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 44px;
+    }
   }
 `;
 
