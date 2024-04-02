@@ -110,6 +110,7 @@ export const TelegramCont = styled.div`
   @media (min-width: 1440px) {
     margin: 0;
     gap: 54px;
+    align-self: flex-end;
   }
 `;
 
