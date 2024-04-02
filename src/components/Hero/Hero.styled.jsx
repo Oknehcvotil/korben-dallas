@@ -124,6 +124,7 @@ export const ContactBtn = styled.a`
   padding: 16px 24px;
   background: linear-gradient(90deg, #faff00 35.84%, #9ae1c9 100%);
   cursor: pointer;
+  color: #000;
 
   @media (min-width: 1440px) {
     max-width: 222px;
