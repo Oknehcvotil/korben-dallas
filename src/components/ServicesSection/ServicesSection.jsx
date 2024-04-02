@@ -14,7 +14,7 @@ const ServicesSection = () => {
   const isDesktop = windowSize.width >= 1440;
 
   return (
-    <ServSection>
+    <ServSection id='services'>
       <Wrapper>
         <ServCard>
           <ServTitle>

@@ -4,6 +4,8 @@ import {
   CopyRightText,
   FooterCard,
   FooterLogoLink,
+  FooterTextCont,
+  LogoCont,
 } from './AppFooter.styled';
 import SubscribeForm from 'components/SubscribeForm/SubscribeForm';
 import SocialMediaCard from 'components/SocialMediaCard/SocialMediaCard';
@@ -26,17 +28,22 @@ const AppFooter = () => {
           {!isDesktop && <TelegramCommunityBtn />}
           {!isDesktop && <SubscribeForm />}
           {!isDesktop && <SocialMediaCard />}
-          <FooterLogoLink>
-            K&D <span>DIGITAL AGENCY</span>
-          </FooterLogoLink>
-          <AwardsSection />
-          <AddressText>
-            K&D S.r.l.s &copy;2021-2024 <br />
-            Via Ponteselice Zona Ind.le Sacomyr - Cansurzoto ASI - 81203 Latert
-          </AddressText>
-          <CopyRightText>
-            Copyright &copy; 2024 K&B All rights reserved.
-          </CopyRightText>
+          <LogoCont>
+            <FooterLogoLink>
+              K&D <span>DIGITAL AGENCY</span>
+            </FooterLogoLink>
+            <AwardsSection />
+          </LogoCont>
+          <FooterTextCont>
+            <AddressText>
+              K&D S.r.l.s &copy;2021-2024 <br />
+              Via Ponteselice Zona Ind.le Sacomyr - Cansurzoto ASI - 81203
+              Latert
+            </AddressText>
+            <CopyRightText>
+              Copyright &copy; 2024 K&B All rights reserved.
+            </CopyRightText>
+          </FooterTextCont>
         </FooterCard>
       </Wrapper>
     </footer>

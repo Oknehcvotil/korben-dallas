@@ -7,7 +7,7 @@ import SubscribeForm from 'components/SubscribeForm/SubscribeForm';
 
 const YourProjectSection = () => {
   return (
-    <ProjectSection>
+    <ProjectSection id="form">
       <Wrapper>
         <ProjectCard>
           <StartProjectTitle />

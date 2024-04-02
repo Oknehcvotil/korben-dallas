@@ -16,7 +16,7 @@ const Advantages = () => {
   const isDesktop = windowSize.width >= 1440;
 
   return (
-    <AdvantagesSection>
+    <AdvantagesSection id="work">
       <Wrapper
         style={
           isDesktop

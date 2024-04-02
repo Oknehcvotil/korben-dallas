@@ -47,7 +47,7 @@ const Hero = () => {
             team
           </DigitalOpportunities>
           {isDesktop && (
-            <ContactBtn type="button">
+            <ContactBtn href="#form">
               Contact Us
               <Icon width="20" height="16" iconName="#icon-arrow" />
             </ContactBtn>
@@ -62,7 +62,7 @@ const Hero = () => {
             </VideoCont>
           </VideoCard>
           {!isDesktop && (
-            <ContactBtn type="button">
+            <ContactBtn href="#form">
               Contact Us
               <Icon width="20" height="16" iconName="#icon-arrow" />
             </ContactBtn>

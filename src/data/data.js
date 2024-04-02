@@ -21,23 +21,31 @@ import apacImg from '../assets/images/awards/apac.png';
 import microsoftImg from '../assets/images/awards/microsoft.png';
 import deloitteImg from '../assets/images/awards/deloitte.png';
 import bestImg from '../assets/images/awards/best.png';
+import apacDeskImg from '../assets/images/awards/apac_desk.png';
+import microsoftDeskImg from '../assets/images/awards/microsoft_desk.png';
+import deloitteDeskImg from '../assets/images/awards/deloitte_desk.png';
+import bestDeskImg from '../assets/images/awards/best_desk.png';
 
 export const awardsData = [
   {
     img: apacImg,
+    imgDesk: apacDeskImg,
     alt: 'Apac Search Awards Winner 2023',
   },
   {
     img: microsoftImg,
+    imgDesk: microsoftDeskImg,
     alt: 'Global Partner Awards Winner 2023',
   },
   {
     img: deloitteImg,
+    imgDesk: deloitteDeskImg,
     alt: 'Deloitte Tech Fast  Winner',
   },
 
   {
     img: bestImg,
+    imgDesk: bestDeskImg,
     alt: 'Spring Awards 2023',
   },
 ];
