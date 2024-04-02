@@ -20,14 +20,6 @@ export const FooterTitle = styled.h2`
   }
 `;
 
-export const FooterText = styled.p`
-  font-size: 14px;
-  line-height: 140%;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 20px;
-`;
-
 export const FooterLogoLink = styled.a`
   font-weight: 700;
   font-size: 27px;

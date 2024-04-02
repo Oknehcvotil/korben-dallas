@@ -4,6 +4,12 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
+  position: relative;
+
+  @media (min-width: 1440px) {
+    margin-right: 158px;
+    margin-bottom: 0;
+  }
 `;
 
 export const EmailInput = styled.input`
@@ -21,6 +27,16 @@ export const EmailInput = styled.input`
     line-height: 140%;
     color: #4b5563;
   }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+    max-width: 370px;
+    width: 370px;
+
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
 `;
 
 export const SubscribeBtn = styled.button`
@@ -34,4 +50,20 @@ export const SubscribeBtn = styled.button`
   justify-content: center;
   gap: 3px;
   color: #000;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+
+  @media (min-width: 1440px) {
+    border-radius: 57px;
+    max-width: 166px;
+    height: 52px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 16px;
+  }
 `;

@@ -11,6 +11,12 @@ import googleImg from '../assets/images/social_media/google.png';
 import xImg from '../assets/images/social_media/x.png';
 import snapchatImg from '../assets/images/social_media/snapchat.png';
 import linkedinImg from '../assets/images/social_media/linkedin.png';
+import tikTokDeskImg from '../assets/images/social_media/tiktokDesk.png';
+import MetaDeskImg from '../assets/images/social_media/metaDesk.png';
+import googleDeskImg from '../assets/images/social_media/googleDesk.png';
+import xDeskImg from '../assets/images/social_media/xDesk.png';
+import snapchatDeskImg from '../assets/images/social_media/snapchatDesk.png';
+import linkedinDeskImg from '../assets/images/social_media/linkedinDesk.png';
 import apacImg from '../assets/images/awards/apac.png';
 import microsoftImg from '../assets/images/awards/microsoft.png';
 import deloitteImg from '../assets/images/awards/deloitte.png';
@@ -39,26 +45,32 @@ export const awardsData = [
 export const socialMediaData = [
   {
     img: tikTokImg,
+    imgDesk: tikTokDeskImg,
     alt: 'Tik Tok',
   },
   {
     img: MetaImg,
+    imgDesk: MetaDeskImg,
     alt: 'Meta',
   },
   {
     img: googleImg,
+    imgDesk: googleDeskImg,
     alt: 'Google',
   },
   {
     img: xImg,
+    imgDesk: xDeskImg,
     alt: 'X',
   },
   {
     img: snapchatImg,
+    imgDesk: snapchatDeskImg,
     alt: 'Snapchat',
   },
   {
     img: linkedinImg,
+    imgDesk: linkedinDeskImg,
     alt: 'LinkedIn',
   },
 ];

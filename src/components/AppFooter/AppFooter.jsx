@@ -4,30 +4,28 @@ import {
   CopyRightText,
   FooterCard,
   FooterLogoLink,
-  FooterText,
-  FooterTitle,
 } from './AppFooter.styled';
 import SubscribeForm from 'components/SubscribeForm/SubscribeForm';
 import SocialMediaCard from 'components/SocialMediaCard/SocialMediaCard';
 import AwardsSection from 'components/AwardsSection/AwardsSection';
 import TelegramCommunityBtn from 'components/TelegramCommunityBtn/TelegramCommunityBtn';
+import IntroParagraph from 'components/IntroParagraph/IntroParagraph';
+import useResize from 'hooks/useResize';
+import StartProjectTitle from 'components/StartProjectTitle/StartProjectTitle';
 
 const AppFooter = () => {
+  const windowSize = useResize();
+  const isDesktop = windowSize.width >= 1440;
+
   return (
     <footer>
       <Wrapper>
         <FooterCard>
-          <FooterTitle>
-            Start Your <span>Project</span>
-          </FooterTitle>
-          <FooterText>
-            Whether you're envisioning a stunning website, a captivating
-            marketing campaign, or a cutting-edge digital solution, we're here
-            to bring your ideas to life.
-          </FooterText>
-          <TelegramCommunityBtn />
-          <SubscribeForm />
-          <SocialMediaCard />
+          {!isDesktop && <StartProjectTitle />}
+          {!isDesktop && <IntroParagraph />}
+          {!isDesktop && <TelegramCommunityBtn />}
+          {!isDesktop && <SubscribeForm />}
+          {!isDesktop && <SocialMediaCard />}
           <FooterLogoLink>
             K&D <span>DIGITAL AGENCY</span>
           </FooterLogoLink>
