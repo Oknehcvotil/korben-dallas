@@ -8,17 +8,39 @@ import {
   PartnersTitle,
 } from './Partners.styled';
 import PartnersListItem from 'components/PartnersListItem/PartnersListItem';
+import { motion } from 'framer-motion';
+
+const fadeInAnimationVariants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: index => ({
+    opacity: 1,
+    transition: {
+      delay: 0.2 * index,
+      duration: 0.2,
+    },
+  }),
+};
 
 const Partners = () => {
   return (
     <PartnersSection id="partners">
-      <Wrapper>
-        <PartnersCard>
+      <Wrapper style={{ overflow: 'visible' }}>
+        <PartnersCard
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{
+            once: true,
+          }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+        >
           <PartnersTitle>Partners</PartnersTitle>
           <PartnersImgCont>
             <PartnersList>
               {partnersData.map((partner, index) => (
                 <PartnersListItem
+                  index={index}
                   key={index}
                   width={partner.width}
                   height={partner.height}
@@ -28,9 +50,18 @@ const Partners = () => {
             </PartnersList>
             <PartnersList display="grid" gap="19px 17px">
               {partnersCasinoData.map((img, index) => (
-                <li key={index}>
+                <motion.li
+                  key={index}
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: true,
+                  }}
+                  custom={index}
+                >
                   <img src={img} alt="Partners" />
-                </li>
+                </motion.li>
               ))}
             </PartnersList>
           </PartnersImgCont>

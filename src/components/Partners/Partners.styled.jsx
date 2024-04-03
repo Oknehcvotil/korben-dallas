@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const PartnersSection = styled.section`
   padding-top: 50px;
@@ -10,7 +11,7 @@ export const PartnersSection = styled.section`
   }
 `;
 
-export const PartnersCard = styled.div`
+export const PartnersCard = styled(motion.div)`
   border-radius: 16px;
   max-width: 345px;
   min-height: 932px;
