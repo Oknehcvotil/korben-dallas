@@ -23,7 +23,14 @@ const Community = () => {
   return (
     <CommunitySection>
       <Wrapper>
-        <CommunityCard>
+        <CommunityCard
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{
+            once: true,
+          }}
+          transition={{ duration: 0.2 }}
+        >
           <CommunityTitle>Explore Our Community</CommunityTitle>
           <CommunityText>
             At <strong>K&B</strong> we invite you to embark{' '}
@@ -42,11 +49,20 @@ const Community = () => {
               {communityData
                 .slice(0, communityData.length / 2)
                 .map((community, index) => (
-                  <CommunityListItem key={index}>{community}</CommunityListItem>
+                  <CommunityListItem index={index} key={index}>
+                    {community}
+                  </CommunityListItem>
                 ))}
             </CommunityList>
             <TelegramCont>
-              <TelegramImgCont>
+              <TelegramImgCont
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{ delay: 0.2, duration: 0.2 }}
+              >
                 <a href="https://t.me/+rU4Xn2iRY5A2Y2Ji">
                   <img
                     src={isDesktop ? telegramImgDesktop : telegramImg}
@@ -56,13 +72,25 @@ const Community = () => {
                   />
                 </a>
               </TelegramImgCont>
-              <JoinBtn href="https://t.me/+rU4Xn2iRY5A2Y2Ji">JOIN</JoinBtn>
+              <JoinBtn
+                initial={{ opacity: 0, y: 100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{
+                  once: true,
+                }}
+                transition={{ delay: 0.2, duration: 0.2 }}
+                href="https://t.me/+rU4Xn2iRY5A2Y2Ji"
+              >
+                JOIN
+              </JoinBtn>
             </TelegramCont>
             <CommunityList>
               {communityData
                 .slice(communityData.length / 2)
                 .map((community, index) => (
-                  <CommunityListItem key={index}>{community}</CommunityListItem>
+                  <CommunityListItem index={index} key={index}>
+                    {community}
+                  </CommunityListItem>
                 ))}
             </CommunityList>
           </CommunityLinksContainer>

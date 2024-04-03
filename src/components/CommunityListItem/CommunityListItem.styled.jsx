@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
-export const CommunityItem = styled.li`
+export const CommunityItem = styled(motion.li)`
   margin: 0 auto;
   border-radius: 14px;
   padding: 9px 4px;

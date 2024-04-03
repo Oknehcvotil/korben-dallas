@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const CommunitySection = styled.section`
   padding-top: 34px;
@@ -8,7 +9,7 @@ export const CommunitySection = styled.section`
   }
 `;
 
-export const CommunityCard = styled.div`
+export const CommunityCard = styled(motion.div)`
   @media (min-width: 1440px) {
     border-radius: 40px;
     max-width: 1360px;
@@ -114,7 +115,7 @@ export const TelegramCont = styled.div`
   }
 `;
 
-export const TelegramImgCont = styled.div`
+export const TelegramImgCont = styled(motion.div)`
   @media (min-width: 1440px) {
     border-radius: 100%;
     padding: 9px;
@@ -129,7 +130,7 @@ export const TelegramImgCont = styled.div`
   }
 `;
 
-export const JoinBtn = styled.a`
+export const JoinBtn = styled(motion.a)`
   border: 1.54px solid #000;
   border-radius: 74px;
   padding: 12px 24px;
