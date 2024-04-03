@@ -12,6 +12,10 @@ export const TelegramCommunityCont = styled.div`
   }
 `;
 
+export const TelegramImgLink = styled.a`
+  display: contents;
+`;
+
 export const TelegramCommunityButton = styled.a`
   border: 1.2px solid #fff;
   border-radius: 58px;

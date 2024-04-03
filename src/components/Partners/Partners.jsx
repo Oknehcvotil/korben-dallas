@@ -11,7 +11,7 @@ import PartnersListItem from 'components/PartnersListItem/PartnersListItem';
 
 const Partners = () => {
   return (
-    <PartnersSection id='partners'>
+    <PartnersSection id="partners">
       <Wrapper>
         <PartnersCard>
           <PartnersTitle>Partners</PartnersTitle>

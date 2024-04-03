@@ -89,16 +89,16 @@ export const advantagesListData = [
   {
     amount: (
       <>
-        <span>$8</span>12+
+        <span>$9</span>,5m+
       </>
     ),
-    title: 'Money Raised',
+    title: 'Ads spend',
     description:
       'Total amount of money raised as a result of working with Walk Studio',
   },
   {
-    amount: '12+',
-    title: 'Unicorn Award',
+    amount: '32+',
+    title: 'Awards & Licenses',
     description: 'We have received various awards with prayers and efforts',
   },
   {

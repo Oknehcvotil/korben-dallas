@@ -12,7 +12,7 @@ import {
   VideoCont,
 } from './Hero.styled';
 import useResize from 'hooks/useResize';
-import heroVideo from '../../assets/videos/hero_video.MP4';
+// import heroVideo from '../../assets/videos/hero_video.MP4';
 
 const Hero = () => {
   const windowSize = useResize();
@@ -47,7 +47,7 @@ const Hero = () => {
             team
           </DigitalOpportunities>
           {isDesktop && (
-            <ContactBtn href="#form">
+            <ContactBtn href="https://t.me/+rU4Xn2iRY5A2Y2Ji">
               Contact Us
               <Icon width="20" height="16" iconName="#icon-arrow" />
             </ContactBtn>
@@ -57,12 +57,12 @@ const Hero = () => {
           <VideoCard>
             <VideoCont>
               <video id="videoPlayer" autoPlay loop muted playsInline>
-                <source src={heroVideo} type="video/mp4" />
+                {/* <source src={heroVideo} type="video/mp4" /> */}
               </video>
             </VideoCont>
           </VideoCard>
           {!isDesktop && (
-            <ContactBtn href="#form">
+            <ContactBtn href="https://t.me/+rU4Xn2iRY5A2Y2Ji">
               Contact Us
               <Icon width="20" height="16" iconName="#icon-arrow" />
             </ContactBtn>

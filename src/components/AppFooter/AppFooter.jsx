@@ -7,13 +7,13 @@ import {
   FooterTextCont,
   LogoCont,
 } from './AppFooter.styled';
-import SubscribeForm from 'components/SubscribeForm/SubscribeForm';
 import SocialMediaCard from 'components/SocialMediaCard/SocialMediaCard';
 import AwardsSection from 'components/AwardsSection/AwardsSection';
 import TelegramCommunityBtn from 'components/TelegramCommunityBtn/TelegramCommunityBtn';
 import IntroParagraph from 'components/IntroParagraph/IntroParagraph';
 import useResize from 'hooks/useResize';
 import StartProjectTitle from 'components/StartProjectTitle/StartProjectTitle';
+import SubscribeButton from 'components/SubscribeButton/SubscribeButton';
 
 const AppFooter = () => {
   const windowSize = useResize();
@@ -26,7 +26,7 @@ const AppFooter = () => {
           {!isDesktop && <StartProjectTitle />}
           {!isDesktop && <IntroParagraph />}
           {!isDesktop && <TelegramCommunityBtn />}
-          {!isDesktop && <SubscribeForm />}
+          {!isDesktop && <SubscribeButton />}
           {!isDesktop && <SocialMediaCard />}
           <LogoCont>
             <FooterLogoLink>

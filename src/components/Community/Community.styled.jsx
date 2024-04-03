@@ -142,4 +142,5 @@ export const JoinBtn = styled.a`
   font-weight: 500;
   font-size: 24px;
   cursor: pointer;
+  color: #000;
 `;

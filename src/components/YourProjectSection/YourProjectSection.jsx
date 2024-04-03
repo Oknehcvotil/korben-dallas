@@ -3,7 +3,7 @@ import { ProjectCard, ProjectSection } from './YourProjectSection.styled';
 import StartProjectTitle from 'components/StartProjectTitle/StartProjectTitle';
 import SocialMediaCard from 'components/SocialMediaCard/SocialMediaCard';
 import IntroParagraph from 'components/IntroParagraph/IntroParagraph';
-import SubscribeForm from 'components/SubscribeForm/SubscribeForm';
+import SubscribeButton from 'components/SubscribeButton/SubscribeButton';
 
 const YourProjectSection = () => {
   return (
@@ -13,7 +13,7 @@ const YourProjectSection = () => {
           <StartProjectTitle />
           <SocialMediaCard />
           <IntroParagraph />
-          <SubscribeForm />
+          <SubscribeButton />
         </ProjectCard>
       </Wrapper>
     </ProjectSection>

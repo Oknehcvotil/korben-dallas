@@ -47,14 +47,16 @@ const Community = () => {
             </CommunityList>
             <TelegramCont>
               <TelegramImgCont>
-                <img
-                  src={isDesktop ? telegramImgDesktop : telegramImg}
-                  alt="telegram"
-                  width={isDesktop ? '193.4' : '66'}
-                  height={isDesktop ? '193.4' : '66'}
-                />
+                <a href="https://t.me/+rU4Xn2iRY5A2Y2Ji">
+                  <img
+                    src={isDesktop ? telegramImgDesktop : telegramImg}
+                    alt="telegram"
+                    width={isDesktop ? '193.4' : '66'}
+                    height={isDesktop ? '193.4' : '66'}
+                  />
+                </a>
               </TelegramImgCont>
-              <JoinBtn>JOIN</JoinBtn>
+              <JoinBtn href="https://t.me/+rU4Xn2iRY5A2Y2Ji">JOIN</JoinBtn>
             </TelegramCont>
             <CommunityList>
               {communityData
