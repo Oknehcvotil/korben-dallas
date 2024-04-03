@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
-    y: 100,
+    y: -100,
   },
   animate: index => ({
     opacity: 1,

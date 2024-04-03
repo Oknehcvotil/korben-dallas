@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const HeroSection = styled.section`
   padding-top: 33px;
@@ -34,7 +35,7 @@ export const DesignRectangle = styled.div`
   }
 `;
 
-export const HeroTitle = styled.h1`
+export const HeroTitle = styled(motion.h1)`
   font-weight: 400;
   font-size: 32px;
   line-height: 110%;
@@ -45,7 +46,7 @@ export const HeroTitle = styled.h1`
   }
 `;
 
-export const Logo = styled.a`
+export const Logo = styled(motion.a)`
   display: inline-block;
   line-height: 110%;
   color: #000;
@@ -66,7 +67,7 @@ export const Logo = styled.a`
   }
 `;
 
-export const DigitalOpportunities = styled.p`
+export const DigitalOpportunities = styled(motion.p)`
   @media (min-width: 1440px) {
     margin-bottom: 32px;
     max-width: 469px;
@@ -109,7 +110,7 @@ export const VideoCont = styled.div`
   }
 `;
 
-export const ContactBtn = styled.a`
+export const ContactBtn = styled(motion.a)`
   display: flex;
   align-items: center;
   gap: 3px;

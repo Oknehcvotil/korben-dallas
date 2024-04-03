@@ -13,6 +13,7 @@ import {
 } from './Hero.styled';
 import useResize from 'hooks/useResize';
 import heroVideo from '../../assets/videos/hero_video.MP4';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const windowSize = useResize();
@@ -33,27 +34,49 @@ const Hero = () => {
       >
         <HeroTitleCont>
           <DesignRectangle />
-          <HeroTitle>
+          <HeroTitle
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.2 }}
+          >
             Multi-service Digital <strong>Agency</strong>
           </HeroTitle>
-          <Logo href="/">
+          <Logo
+            href="/"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.2 }}
+          >
             Korben&{!isDesktop && <br />}Dallas{' '}
             {!isDesktop && (
               <Icon width="29.8" height="29.8" iconName="#icon-star" />
             )}
           </Logo>
-          <DigitalOpportunities>
+          <DigitalOpportunities
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.2 }}
+          >
             Expand your opportunities in the digital space with professional
             team
           </DigitalOpportunities>
           {isDesktop && (
-            <ContactBtn href="https://t.me/+rU4Xn2iRY5A2Y2Ji">
+            <ContactBtn
+              href="https://t.me/+rU4Xn2iRY5A2Y2Ji"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.2 }}
+            >
               Contact Us
               <Icon width="20" height="16" iconName="#icon-arrow" />
             </ContactBtn>
           )}
         </HeroTitleCont>
-        <div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 0.5 }}
+        >
           <VideoCard>
             <VideoCont>
               <video id="videoPlayer" autoPlay loop muted playsInline>
@@ -67,7 +90,7 @@ const Hero = () => {
               <Icon width="20" height="16" iconName="#icon-arrow" />
             </ContactBtn>
           )}
-        </div>
+        </motion.div>
       </Wrapper>
     </HeroSection>
   );
