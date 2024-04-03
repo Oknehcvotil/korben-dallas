@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const AdvantagesSection = styled.section`
   padding-top: 26px;
@@ -8,7 +9,7 @@ export const AdvantagesSection = styled.section`
   }
 `;
 
-export const AdvantagesCard = styled.div`
+export const AdvantagesCard = styled(motion.div)`
   border-radius: 24px;
   max-width: 345px;
   height: 1222px;

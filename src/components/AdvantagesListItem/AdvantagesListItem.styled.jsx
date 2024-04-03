@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
-export const AdvantageItem = styled.li`
+export const AdvantageItem = styled(motion.li)`
   color: #fff;
   text-align: center;
   max-width: 268px;
