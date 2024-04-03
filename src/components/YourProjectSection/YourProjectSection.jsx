@@ -9,7 +9,14 @@ const YourProjectSection = () => {
   return (
     <ProjectSection id="form">
       <Wrapper>
-        <ProjectCard>
+        <ProjectCard
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{
+            once: true,
+          }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+        >
           <StartProjectTitle />
           <SocialMediaCard />
           <IntroParagraph />

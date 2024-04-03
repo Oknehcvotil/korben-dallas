@@ -11,10 +11,7 @@ const TelegramCommunityBtn = () => {
       <TelegramImgLink
         href="https://t.me/+rU4Xn2iRY5A2Y2Ji"
         initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{
-          once: true,
-        }}
+        animate={{ opacity: 1 }}
         transition={{ delay: 0.175 }}
       >
         <img src={telegramImg} alt="telegram" width="40" height="40" />
@@ -22,10 +19,7 @@ const TelegramCommunityBtn = () => {
       <TelegramCommunityButton
         href="https://t.me/+rU4Xn2iRY5A2Y2Ji"
         initial={{ opacity: 0, x: 100 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        viewport={{
-          once: true,
-        }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.175 }}
       >
         Community
