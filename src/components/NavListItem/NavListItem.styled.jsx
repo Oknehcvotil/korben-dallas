@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
-export const NavItem = styled.li`
+export const NavItem = styled(motion.li)`
   &:not(:last-of-type) {
     margin-right: 16px;
   }

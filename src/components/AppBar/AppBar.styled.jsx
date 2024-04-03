@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const Header = styled.header`
   padding-top: 30px;
@@ -11,7 +12,7 @@ export const NavList = styled.ul`
   align-items: center;
 `;
 
-export const HeaderLogo = styled.a`
+export const HeaderLogo = styled(motion.a)`
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 40px;

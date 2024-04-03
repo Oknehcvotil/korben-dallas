@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header, NavList, HeaderLogo} from './AppBar.styled';
+import { Header, NavList, HeaderLogo } from './AppBar.styled';
 import Wrapper from 'components/Wrapper/Wrapper';
 import { navData } from 'data/data';
 import NavListItem from 'components/NavListItem/NavListItem';
@@ -18,11 +18,20 @@ const AppBar = () => {
         <nav>
           <NavList>
             {navData.map((data, index) => (
-              <NavListItem key={index} name={data.name} hash={data.hash} />
+              <NavListItem
+                key={index}
+                index={index}
+                name={data.name}
+                hash={data.hash}
+              />
             ))}
           </NavList>
         </nav>
-        <HeaderLogo>
+        <HeaderLogo
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.175 }}
+        >
           K&D <span>DIGITAL AGENCY</span>
         </HeaderLogo>
         <TelegramCommunityBtn />

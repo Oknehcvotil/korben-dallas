@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const TelegramCommunityCont = styled.div`
   display: flex;
@@ -12,11 +13,11 @@ export const TelegramCommunityCont = styled.div`
   }
 `;
 
-export const TelegramImgLink = styled.a`
+export const TelegramImgLink = styled(motion.a)`
   display: contents;
 `;
 
-export const TelegramCommunityButton = styled.a`
+export const TelegramCommunityButton = styled(motion.a)`
   border: 1.2px solid #fff;
   border-radius: 58px;
   padding: 9px 19px;
