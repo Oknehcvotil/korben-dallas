@@ -24,4 +24,25 @@ export const SubscribeBtn = styled.a`
     margin-bottom: 0;
     margin-right: 217px;
   }
+
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    scale: 1.05;
+    outline: none;
+
+    svg {
+      transform: translateX(10px);
+    }
+  }
+
+  &:active {
+    scale: 1;
+  }
 `;

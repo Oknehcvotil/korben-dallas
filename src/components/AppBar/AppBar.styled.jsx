@@ -27,4 +27,12 @@ export const HeaderLogo = styled(motion.a)`
     font-weight: 300;
     font-size: 15px;
   }
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    scale: 1.1;
+    outline: none;
+  }
 `;

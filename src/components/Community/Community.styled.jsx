@@ -128,6 +128,18 @@ export const TelegramImgCont = styled(motion.div)`
     align-items: center;
     justify-content: center;
   }
+
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    img {
+      scale: 1.1;
+      outline: none;
+    }
+  }
 `;
 
 export const JoinBtn = styled(motion.a)`
@@ -144,4 +156,18 @@ export const JoinBtn = styled(motion.a)`
   font-size: 24px;
   cursor: pointer;
   color: #000;
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-color: #d3f500;
+    color: #d3f500;
+    outline: none;
+    scale: 1.05;
+  }
+
+  &:active {
+    scale: 1;
+  }
 `;

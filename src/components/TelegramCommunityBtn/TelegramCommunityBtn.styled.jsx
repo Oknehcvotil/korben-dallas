@@ -15,6 +15,25 @@ export const TelegramCommunityCont = styled.div`
 
 export const TelegramImgLink = styled(motion.a)`
   display: contents;
+
+  img {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    img {
+      scale: 1.1;
+      outline: none;
+    }
+  }
+
+  &:active {
+    img {
+      scale: 1.05;
+    }
+  }
 `;
 
 export const TelegramCommunityButton = styled(motion.a)`
@@ -34,5 +53,20 @@ export const TelegramCommunityButton = styled(motion.a)`
   @media (min-width: 1440px) {
     border-color: #000;
     color: #000;
+  }
+
+  transition: all 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    border-color: #d3f500;
+    color: #d3f500;
+    outline: none;
+    scale: 1.05;
+    outline: none;
+  }
+
+  &:active {
+    scale: 1;
   }
 `;

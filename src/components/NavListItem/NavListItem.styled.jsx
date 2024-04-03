@@ -15,4 +15,12 @@ export const NavLink = styled.a`
   font-size: 16px;
   text-align: center;
   color: #000;
+  transition: all 0.3s ease;
+
+  &:hover,
+  &:focus {
+    border-color: #d3f500;
+    color: #d3f500;
+    outline: none;
+  }
 `;

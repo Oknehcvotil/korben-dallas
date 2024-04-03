@@ -130,4 +130,25 @@ export const ContactBtn = styled(motion.a)`
   @media (min-width: 1440px) {
     max-width: 222px;
   }
+
+  transition: all 0.3s ease-in-out;
+
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    scale: 1.05;
+    outline: none;
+
+    svg {
+      transform: translateX(10px);
+    }
+  }
+
+  &:active {
+    scale: 1;
+  }
 `;
