@@ -22,7 +22,7 @@ const Community = () => {
 
   return (
     <CommunitySection>
-      <Wrapper>
+      <Wrapper style={{ overflow: 'visible' }}>
         <CommunityCard
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
