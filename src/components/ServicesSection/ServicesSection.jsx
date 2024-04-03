@@ -14,15 +14,23 @@ const ServicesSection = () => {
   const isDesktop = windowSize.width >= 1440;
 
   return (
-    <ServSection id='services'>
+    <ServSection id="services">
       <Wrapper>
-        <ServCard>
+        <ServCard
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{
+            once: true,
+          }}
+          transition={{ delay: 0.2, duration: 0.2 }}
+        >
           <ServTitle>
             {!isDesktop ? 'K&D' : 'Korben&Dallas'} <span>Services</span>
           </ServTitle>
           <ServList>
             {servicesListData.slice(0, 3).map((service, index) => (
               <ServicesListItem
+                index={index}
                 key={index}
                 img={service.icon}
                 title={service.title}

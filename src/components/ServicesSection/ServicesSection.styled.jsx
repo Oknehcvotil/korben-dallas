@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { motion } from 'framer-motion';
 
 export const ServSection = styled.section`
   padding-top: 21px;
@@ -8,7 +9,7 @@ export const ServSection = styled.section`
   }
 `;
 
-export const ServCard = styled.div`
+export const ServCard = styled(motion.div)`
   border-radius: 24px;
   max-width: 345px;
   min-height: 1265px;

@@ -42,6 +42,7 @@ AdvantagesListItem.propTypes = {
   amount: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  index: PropTypes.number,
 };
 
 export default AdvantagesListItem;
