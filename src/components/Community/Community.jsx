@@ -78,7 +78,7 @@ const Community = () => {
                 viewport={{
                   once: true,
                 }}
-                transition={{ delay: 0.2, duration: 0.2 }}
+                transition={{ duration: 0.2 }}
                 href="https://t.me/+rU4Xn2iRY5A2Y2Ji"
               >
                 JOIN
