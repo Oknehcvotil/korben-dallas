@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <>
-      {isDesktop && <AppBar />}
+      <AppBar />
       <main>
         <Hero />
         <RunningText />

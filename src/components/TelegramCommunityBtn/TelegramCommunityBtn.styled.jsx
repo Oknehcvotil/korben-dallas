@@ -37,7 +37,7 @@ export const TelegramImgLink = styled(motion.a)`
 `;
 
 export const TelegramCommunityButton = styled(motion.a)`
-  border: 1.2px solid #fff;
+  border: ${props => `1.2px solid ${props.borderсolor || '#fff'}`};
   border-radius: 58px;
   padding: 9px 19px;
   max-width: 263px;
@@ -48,7 +48,7 @@ export const TelegramCommunityButton = styled(motion.a)`
   justify-content: center;
   font-weight: 500;
   font-size: 19px;
-  color: #fff;
+  color: ${props => props.color || '#fff'};
 
   @media (min-width: 1440px) {
     border-color: #000;

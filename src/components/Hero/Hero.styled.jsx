@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 
 export const HeroSection = styled.section`
-  padding-top: 33px;
+  padding-top: 20px;
   padding-bottom: 35px;
 
   @media (min-width: 1440px) {

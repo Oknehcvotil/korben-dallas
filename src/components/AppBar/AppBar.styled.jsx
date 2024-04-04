@@ -2,7 +2,10 @@ import styled from '@emotion/styled';
 import { motion } from 'framer-motion';
 
 export const Header = styled.header`
-  padding-top: 30px;
+  padding-top: 18px;
+  @media (min-width: 1440px) {
+    padding-top: 30px;
+  }
 `;
 
 export const NavList = styled.ul`
